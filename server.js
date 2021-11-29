@@ -14,6 +14,7 @@ app.set('view engine','ejs')
 app.set('views', path.join(__dirname, './app/views'));
 //app.use(express.static(path.join(__dirname + 'public')));
 app.use('/', express.static('public'));
+
 const tutorialRoutes = require("./app/routes/tutorialRoutes.js");
 
 // simple route
