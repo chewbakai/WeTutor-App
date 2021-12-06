@@ -12,17 +12,21 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.set('view engine','ejs')
 app.set('views', path.join(__dirname, './app/views'));
-//app.use(express.static(path.join(__dirname + 'public')));
 app.use('/', express.static('public'));
 
-const tutorialRoutes = require("./app/routes/tutorialRoutes.js");
+const tutorialRoutes = require('./app/routes/tutorialRoutes');
 
 // simple route
 app.get("/", (req, res) => res.render('index'))
 app.get("/register", (req,res) => res.render('register'))
-app.get("/ClassPools", (req, res) => res.render('ClassPools'))
 app.get("/TutorPools", (req, res) => res.render('TutorPools'))
-//app.use(tutorialRoutes)
+
+app.get("/logout", (req,res) => {
+  req.session.destroy();
+  res.redirect('/');
+})
+
+app.use("/tutors",tutorialRoutes);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
