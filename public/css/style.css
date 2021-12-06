@@ -3439,3 +3439,224 @@ h6 {
   margin-top: 20px;
 }
 
+
+
+.register-photo {
+    background: #f1f7fc;
+    padding: 80px 0
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url(https://i.imgur.com/Fqm9rWL.jpg);
+    background-size: cover
+}
+
+.register-photo .form-container {
+    display: grid;
+    max-width: auto;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 40px
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary {
+    background: green;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+.register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+    background: green
+}
+
+.register-photo form .btn-primary:active {
+    transform: translateY(1px)
+}
+
+.register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100vh;
+  /* grid-template-rows: auto; */
+}
+
+.grid-container > div {
+  text-align: center;
+}
+
+.item1 {
+  grid-row: 1 / span 2;
+  background-color: gray;
+  width: 50vw;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1533906966484-a9c978a3f090?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item2 {
+  grid-row: 1 / span 2;
+  width: 50vw;
+  margin: auto;
+  padding: 20%;
+}
+
+@media (max-width: 768px) {
+  .item1 {
+    display: none
+  }
+
+  .item2 {
+    padding: 8px;
+    width: 100vw;
+  }
+}
+
+.text-center {
+  padding-bottom: 40px;
+}
+
+/* .image-holder img {
+  overflow: hidden;
+  width: 50vw;
+  height: 100vh;
+} */
+
+.header {
+  padding: 120px;
+  text-align: center;
+  background: #1abc9c;
+  /* background-image: url("banner/home-banner.jpg"); */
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-containers {
+  display: grid;
+  /* grid-column-gap: 50px; */
+  grid-template-rows: auto auto auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  grid-row-gap: 50px;
+}
+
+.grid-items {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 60vw;
+  height: 40vh;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.grid-items button{
+  width: 100px;
+  height: 50px;
+  /* background-color: #27ab83; */
+  color: white;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 2px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #27ab83;
+  transition-duration: 0.4s;
+}
+
+.grid-items button:hover {
+  background-color: #27ab83;
+  color: white;
+}
+
+.left-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.right-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.tutButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: auto;
+  padding: 40px;
+}
+
+.tutButtons button{
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  /* display: inline-block; */
+}

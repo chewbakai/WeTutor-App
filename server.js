@@ -19,6 +19,9 @@ const tutorialRoutes = require("./app/routes/tutorialRoutes.js");
 
 // simple route
 app.get("/", (req, res) => res.render('index'))
+app.get("/register", (req,res) => res.render('register'))
+app.get("/ClassPools", (req, res) => res.render('ClassPools'))
+app.get("/TutorPools", (req, res) => res.render('TutorPools'))
 //app.use(tutorialRoutes)
 
 // set port, listen for requests
