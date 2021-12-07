@@ -20,6 +20,7 @@ const accountRoutes = require('./app/routes/accountRoutes');
 // simple route
 app.get("/", (req, res) => res.render('index'))
 app.get("/registerStudent", (req,res) => res.render('registerStudent')) // for testing purpose only since theres no db yet
+app.get("/registerTutor", (req,res) => res.render('registerTutor')) // for testing purpose only since theres no db yet
 app.get("/TutorPools", (req, res) => res.render('TutorPools'))
 
 app.get("/logout", (req,res) => {

@@ -1,0 +1,102 @@
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WeTutor</title> 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500|Rubik:500, 600" rel="stylesheet"> 
+</head>
+
+<body>
+    <form action="/registerTutor" method="POST">
+    <div class="grid-container">
+        <div class="item1"> 
+        </div>
+        <div class="item2">
+                <a class="navbar-brand logo_h" href="/"><h2 class="text mt-12 mb-12">
+                <strong> WeTutor</strong></h2></a>
+                <h2 class="text-center">Create a tutor account.</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
+                     </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" name="lastName" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <select class="form-control" name="gender">
+                        <optgroup label="Gender">
+                          <option value="" disabled selected hidden>Gender</option> 
+                          <option name="Female" value="1">Female</option>
+                          <option name="Male" value="2">Male</option>
+                          <option name="Prefer Not" value="3">Prefer not to say</option>
+                        </optgroup>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="course" class="form-control" placeholder="Course" required>
+                  </div>
+                <div class="form-group">
+                    <select class="form-control" name="selectYear">
+                        <optgroup label="Select Year">
+                          <option value="" disabled selected hidden>Select Year</option> 
+                          <option name="First Year" value="1">First Year</option>
+                          <option name="Second Year" value="2">Second Year</option>
+                          <option name="Third Year" value="3">Third Year</option>
+                          <option name="Fourth Year" value="4">Fourth Year</option>
+                          <option name="Fifth Year" value="5">Fifth Year</option>
+                        </optgroup>
+                        </select>
+                </div>
+                
+                <div class="form-group">
+                    <select class="form-control" name="Type">
+                        <optgroup label="Type">
+                          <option value="" disabled selected hidden>Type of tutor</option> 
+                          <option name="Female" value="1">Volunteer</option>
+                          <option name="Male" value="2">Paid</option>
+                        </optgroup>
+                        </select>
+                </div>
+                  <!-- Upload Resume-->
+                <div class="form-row">
+                    <div class="form-group col-md-4"> Upload Resume
+                        <input type="file" class="form-group" name="resume">
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input class="form-control" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input class="form-control" type="password" name="password-repeat" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" required>I agree to the license terms.</label></div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block" type="submit">Sign Up
+                    </button>
+                </div>
+                    <a class="already" href="/login">Already have an account? Login here.</a>
+                   
+            </form>
+        </div>
+      </div>
+    </form>
+</body>
