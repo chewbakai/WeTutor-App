@@ -21,7 +21,7 @@ const accountRoutes = require('./app/routes/accountRoutes');
 app.get("/", (req, res) => res.render('index'))
 app.get("/registerStudent", (req,res) => res.render('registerStudent')) // for testing purpose only since theres no db yet
 app.get("/registerTutor", (req,res) => res.render('registerTutor')) // for testing purpose only since theres no db yet
-app.get("/TutorPools", (req, res) => res.render('TutorPools'))
+app.get("/tutorPools", (req, res) => res.render('tutorPools'))
 
 app.get("/logout", (req,res) => {
   req.session.destroy();
