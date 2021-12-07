@@ -14,11 +14,12 @@ app.set('view engine','ejs')
 app.set('views', path.join(__dirname, './app/views'));
 app.use('/', express.static('public'));
 
-const tutorialRoutes = require('./app/routes/tutorialRoutes');
+const tutorRoutes = require('./app/routes/tutorRoutes');
+const accountRoutes = require('./app/routes/accountRoutes');
 
 // simple route
 app.get("/", (req, res) => res.render('index'))
-app.get("/register", (req,res) => res.render('register'))
+app.get("/registerStudent", (req,res) => res.render('registerStudent')) // for testing purpose only since theres no db yet
 app.get("/TutorPools", (req, res) => res.render('TutorPools'))
 
 app.get("/logout", (req,res) => {
@@ -26,8 +27,8 @@ app.get("/logout", (req,res) => {
   res.redirect('/');
 })
 
-app.use("/tutors",tutorialRoutes);
-
+app.use(tutorRoutes);
+app.use(accountRoutes);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

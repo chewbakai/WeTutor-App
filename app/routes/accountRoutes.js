@@ -1,13 +1,9 @@
-module.exports = app => {
-    const tutorials = require("../controllers/account.controller.js");
-  
+    const account = require("../controllers/accountController.js");
+    const path = require('path');
     var router = require("express").Router();
   
-    
-    router.post("/create", accountController.createAccount);
-    router.get("/register", accountController.registerAccount);
-    router.post("/login", accountController.loginAccount);
+    router.post("/registerStudent", account.createAccount);
+    router.post("/registerTutor", account.createAccount);
+    router.post("/login", account.loginAccount);
 
-    app.use('/api/tutorials', router);
-
-};
+    module.exports = router;
