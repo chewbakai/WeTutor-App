@@ -30,7 +30,12 @@ body {
   font-weight: 400;
  }
 
-h1,
+h1
+{
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #002347;
+  padding: 45px; }
 h2,
 h3,
 h4,
@@ -39,8 +44,7 @@ h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: #002347;
-  padding: 45px; }
-
+; }
 .list {
   list-style: none;
   margin: 0px;
@@ -53,8 +57,9 @@ a {
     text-decoration: none;
     outline: none; }
 
-.row.m0 {
-  margin: 0px; }
+.row-0 {
+  margin: 0px; 
+ }
 
 button:focus {
   outline: none;
@@ -321,7 +326,7 @@ button:focus {
     font-weight: 600;
     cursor: pointer;
     padding: 10px 0; }
-    
+
     .clear-icon {
       position: relative;
       top: 8px;
@@ -2900,21 +2905,20 @@ h6 {
   background: #627D98;
   padding: 0px 40px;
   color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 100;
   line-height: 40px;
-  border-radius: 5px;
-  outline: none !important;
-  text-align: center;
-  text-transform: uppercase;
+  border-radius: 10px;
+  text-align: right;
+ 
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .primary-btn:hover {
-    background: #fdc632;
-    color: #222222; }
+    background: #ffffff;
+    color: #627D98; }
 
 .primary-btn2 {
   display: inline-block;
@@ -2928,35 +2932,33 @@ h6 {
   border: 1px solid transparent;
   outline: none !important;
   text-align: center;
-  text-transform: uppercase;
+ 
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .primary-btn2:hover {
-    background: transparent;
-    color: #002347;
-    border: 1px solid #002347; }
+    background: #ffffff;
+    color: #627D98; }
 
 .white_bg_btn {
-  background: #fff;
+  
   display: inline-block;
-  color: #002347;
+  color: #555555;
   line-height: 40px;
-  padding: 0px 28px;
-  font-size: 14px;
+  padding: 0px 0px;
+  font-size:28px;
+  border-radius: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   border: none; }
   .white_bg_btn:hover {
-    background: #fdc632;
-    color: #fff; }
+    color:#627D98 ; }
 
 .blog_btn {
   border: 1px solid #eeeeee;
@@ -3047,9 +3049,10 @@ h6 {
     transition: all 400ms linear;
     cursor: pointer; }
 
-  .navbar .container {
+  .navbar {
     padding-left: 15px;
     padding-right: 15px;
+    margin: auto;
   }
 
   .nav {
@@ -3375,75 +3378,6 @@ h6 {
           text-align: left;
           margin-top: 20px; } }
 
-/*---------------------------------------------------- */
-
-#monday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-#tuesday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-
-
-#wednesday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-
-
-#thursday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-
-
-#friday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-
-
-#saturday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-
-
-#sunday{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
-
-#hidden{
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top: 20px;
-}
 
 #notif{
   width: 100%;
@@ -3520,7 +3454,7 @@ h6 {
     box-shadow: none;
     margin-top: 35px;
     text-shadow: none;
-    outline: none !important
+   
 }
 
 .register-photo form .btn-primary:hover,
@@ -3541,15 +3475,19 @@ h6 {
     text-decoration: none
 }
 
+.grid-container1 {
+  display: grid;
+  margin: 0px;
+  grid-template-rows: auto;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  height: 100vh;
-  /* grid-template-rows: auto; */
+  margin: 0px;
+  grid-template-rows: auto;
 }
 
 .grid-container > div {
-  text-align: center;
   margin-top: 280px;
 }
 
@@ -3603,6 +3541,7 @@ h6 {
 .row {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .grid-containers {
@@ -3699,7 +3638,7 @@ h6 {
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
   z-index: 1;
 }
 
