@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col text-left">
                     <a href="/tutorPools" class="white_bg_btn">Find Tutor</a></i></button>
-                   
+                    
                 </div>
                 <div class="col text-right">
                     <div class="dropdown">
@@ -50,37 +50,46 @@
                       <div
                       class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
                       <!-- <a href="https://www.facebook.com/kyrahceniza"><i class="ti-menu"></i></a> -->
-                      <a href="/tutors/"role="button">
-                          <i class="ti-menu"></i> View Details</a>
-                              
+                      
+                          
+                       </div>       
                       </div>
                     </div>
                   </div>
-                  
+                  <div class="popup" id="popup-1">
+                    <div class="overlay"> </div>
+                      <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;
+
+                        </div>
+                    </div>
+                    <button onclick="togglePopup()" class="primary-btn2">View Profile</button>
+
                 </div>
               </div>
             </div>
         </div>
       </div>
-      <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+        
+// Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
         }
-      }
+    }
+  }
+  }
       
+ //Search button 
   const clearIcon = document.querySelector(".clear-icon");
   const searchBar = document.querySelector(".search");
 
@@ -96,6 +105,10 @@
     searchBar.value = "";
     clearIcon.style.visibility = "hidden";
   })
+
+  function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }
 
     </script>
       <script src="js/jquery-3.2.1.min.js"></script>
